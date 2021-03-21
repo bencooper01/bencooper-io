@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.749ff5bc.chunk.css",
+    "main.js": "/static/js/main.a38dac91.chunk.js",
+    "main.js.map": "/static/js/main.a38dac91.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a4a5ed40.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a4a5ed40.js.map",
+    "static/css/2.86a5f087.chunk.css": "/static/css/2.86a5f087.chunk.css",
+    "static/js/2.b6c5ae9d.chunk.js": "/static/js/2.b6c5ae9d.chunk.js",
+    "static/js/2.b6c5ae9d.chunk.js.map": "/static/js/2.b6c5ae9d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.86a5f087.chunk.css.map": "/static/css/2.86a5f087.chunk.css.map",
+    "static/css/main.749ff5bc.chunk.css.map": "/static/css/main.749ff5bc.chunk.css.map",
+    "static/js/2.b6c5ae9d.chunk.js.LICENSE.txt": "/static/js/2.b6c5ae9d.chunk.js.LICENSE.txt",
+    "static/media/every-two.0af01867.jpg": "/static/media/every-two.0af01867.jpg",
+    "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4a5ed40.js",
+    "static/css/2.86a5f087.chunk.css",
+    "static/js/2.b6c5ae9d.chunk.js",
+    "static/css/main.749ff5bc.chunk.css",
+    "static/js/main.a38dac91.chunk.js"
+  ]
+}

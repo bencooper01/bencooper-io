@@ -46,7 +46,7 @@ function Home() {
 							<Typography>Every Two: Paycheck Budget Plannerss</Typography>
 
 							<Box mt={1}>
-								<Button size="large" variant="contained" className={classes.button} color="primary">
+								<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
 									Go
 								</Button>
 							</Box>
