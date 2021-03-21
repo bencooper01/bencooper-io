@@ -1,4 +1,4 @@
-import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip } from "@material-ui/core";
+import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
@@ -9,7 +9,6 @@ import img from "../images/every-two.jpg";
 const useStyles = makeStyles({
 	card: {
 		minWidth: 275,
-		maxWidth: 275,
 	},
 	media: {
 		backgroundSize: "65%",
@@ -35,7 +34,7 @@ function Home() {
 				</Box>
 				<Divider />
 				<Box pt={2}>
-					<Grid item xs={12}>
+					<Grid container xs={12} pt={3} style={styles.container}>
 						<Card className={classes.card}>
 							<CardMedia className={classes.media} image={img} title="hello" />
 
@@ -48,7 +47,7 @@ function Home() {
 
 								<Box mt={1}>
 									<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
-										Go
+										App
 									</Button>
 								</Box>
 							</CardContent>
