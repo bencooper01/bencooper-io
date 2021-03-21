@@ -31,7 +31,7 @@ function Home() {
 			<Container maxWidth="md">
 				<Box pt={10} mb={1}>
 					<Typography variant="h3">Ben Cooper</Typography>
-					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old from AZ learning how to code.</Typography>
+					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer, just trying to build some cool shit.</Typography>
 				</Box>
 				<Divider />
 				<Box pt={2}>
