@@ -1,4 +1,0 @@
-# Redirects from what the browser requests to what we serve
-/apps            /apps.html
-/apps/benbudget /apps/benbudget.html
-/ /index.html
