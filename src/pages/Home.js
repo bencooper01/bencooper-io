@@ -35,23 +35,25 @@ function Home() {
 				</Box>
 				<Divider />
 				<Box pt={2}>
-					<Card className={classes.card}>
-						<CardMedia className={classes.media} image={img} title="hello" />
+					<Grid item xs={12}>
+						<Card className={classes.card}>
+							<CardMedia className={classes.media} image={img} title="hello" />
 
-						<CardContent>
-							<Box mb={2}>
-								<Chip label="React Native" size={"small"} className={classes.chip} />
-								<Chip label="Sqlite" size={"small"} className={classes.chip} />
-							</Box>
-							<Typography>Every Two: Paycheck Budget Planner</Typography>
+							<CardContent>
+								<Box mb={2}>
+									<Chip label="React Native" size={"small"} className={classes.chip} />
+									<Chip label="Sqlite" size={"small"} className={classes.chip} />
+								</Box>
+								<Typography>Every Two: Paycheck Budget Planner</Typography>
 
-							<Box mt={1}>
-								<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
-									Go
-								</Button>
-							</Box>
-						</CardContent>
-					</Card>
+								<Box mt={1}>
+									<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
+										Go
+									</Button>
+								</Box>
+							</CardContent>
+						</Card>
+					</Grid>
 				</Box>
 			</Container>
 		</ThemeProvider>
