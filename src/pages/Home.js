@@ -6,6 +6,7 @@ import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
 import img from "../images/every-two.jpg";
 import { useEffect } from "react";
+// import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
 
 const useStyles = makeStyles({
 	container: {
@@ -33,7 +34,8 @@ const useStyles = makeStyles({
 		paddingTop: 2.5,
 		textAlign: "center",
 	},
-	text: { fontSize: 22 },
+
+	text: { fontSize: 21 },
 });
 
 function Home() {
@@ -59,23 +61,25 @@ function Home() {
 				<Box pt={2}>
 					<Grid container className={styles.container} spacing={1}>
 						<Grid item xs={9} sm={3}>
-							<Card className={styles.card}>
-								<CardMedia className={styles.media} image={img} title="hello" />
+							<Box>
+								<Card className={styles.card}>
+									<CardMedia className={styles.media} image={img} title="hello" />
 
-								<CardContent className={styles.cardContent}>
-									<Box mb={1}>
-										<Chip label="React Native" size={"small"} className={styles.chip} />
-									</Box>
-									<Box>
-										<Typography>Every Two: Paycheck Budget Planner</Typography>
-									</Box>
-									<Box mt={1}>
-										<Button size="large" variant="contained" className={styles.button} color="primary" href="https:\\apple.com">
-											App Store
-										</Button>
-									</Box>
-								</CardContent>
-							</Card>
+									<CardContent className={styles.cardContent}>
+										<Box mb={1}>
+											<Chip label="React Native" size={"small"} className={styles.chip} />
+										</Box>
+										<Box>
+											<Typography>Every Two: Paycheck Budget Planner</Typography>
+										</Box>
+										<Box mt={1}>
+											<Button size="large" variant="contained" className={styles.button} color="primary" href="https:\\apple.com" disableRipple={true}>
+												App Store
+											</Button>
+										</Box>
+									</CardContent>
+								</Card>
+							</Box>
 						</Grid>
 					</Grid>
 				</Box>
