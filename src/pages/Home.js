@@ -33,6 +33,7 @@ const useStyles = makeStyles({
 		paddingTop: 2.5,
 		textAlign: "center",
 	},
+	text: { fontSize: 22 },
 });
 
 function Home() {
@@ -48,7 +49,9 @@ function Home() {
 						</Link>
 					</Typography>
 
-					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.💻</Typography>
+					<Typography variant="subtitle1" className={styles.text}>
+						Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.💻
+					</Typography>
 				</Box>
 
 				<Typography variant="h4">Projects</Typography>
