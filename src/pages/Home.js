@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 	media: {
 		backgroundSize: "65%",
 		backgroundColor: "#fafafa",
-		height: 150,
+		height: 115,
 	},
 	button: {
 		textTransform: "capitalize",
@@ -54,8 +54,8 @@ function Home() {
 				<Typography variant="h4">Projects</Typography>
 				<Divider />
 				<Box pt={2}>
-					<Grid container pt={3} className={styles.container} spacing={2}>
-						<Grid item xs={10} sm={4}>
+					<Grid container className={styles.container} spacing={1}>
+						<Grid item xs={10} sm={3} md={3}>
 							<Card className={styles.card}>
 								<CardMedia className={styles.media} image={img} title="hello" />
 
