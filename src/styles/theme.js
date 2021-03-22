@@ -7,7 +7,6 @@ import "typeface-source-sans-pro";
 export const theme = createMuiTheme({
 	palette: {
 		primary: {
-			// Purple and green play nicely together.
 			main: "#FF5500",
 		},
 		secondary: {
@@ -15,6 +14,6 @@ export const theme = createMuiTheme({
 		},
 	},
 	typography: {
-		fontFamily: ["Open Sans"].join(","),
+		fontFamily: ["-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'].join(","),
 	},
 });
