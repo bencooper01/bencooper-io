@@ -30,10 +30,14 @@ function Home() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
-				<Box pt={10} mb={1}>
-					<Typography variant="h3">Ben Cooper</Typography>
-					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.</Typography>
+				<Box pt={10} mb={3}>
+					<Typography variant="h4" style={{ color: "#004e98" }}>
+						Ben Cooper
+					</Typography>
+					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.💻</Typography>
 				</Box>
+
+				<Typography variant="h4">Projects</Typography>
 				<Divider />
 				<Box pt={2}>
 					<Grid container pt={3} style={styles.container} spacing={3}>
