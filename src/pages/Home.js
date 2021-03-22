@@ -5,6 +5,7 @@ import "fontsource-roboto";
 import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
 import img from "../images/every-two.jpg";
+import { useEffect } from "react";
 
 const useStyles = makeStyles({
 	container: {
@@ -36,13 +37,16 @@ const useStyles = makeStyles({
 
 function Home() {
 	const styles = useStyles();
+
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<Box pt={10} mb={3}>
-					<Typography variant="h4" style={{ color: "#004e98" }}>
-						Ben Cooper
-					</Typography>
+					<a href="https://twitter.com/bencooper_01">
+						<Typography variant="h4" style={{ color: "#004e98", textDecoration: "underline" }}>
+							Ben Cooper
+						</Typography>
+					</a>
 					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.💻</Typography>
 				</Box>
 
@@ -61,7 +65,7 @@ function Home() {
 									<Box>
 										<Typography>Every Two: Paycheck Budget Planner</Typography>
 									</Box>
-									<Box mt={1} justif="center">
+									<Box mt={1}>
 										<Button size="large" variant="contained" className={styles.button} color="primary" href="https:\\apple.com">
 											App Store
 										</Button>

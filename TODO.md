@@ -1,0 +1,2 @@
+- Social Media Links
+- Refactor card into component, and map projects array unto it
