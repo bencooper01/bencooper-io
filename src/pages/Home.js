@@ -7,13 +7,11 @@ import { theme } from "../styles/theme";
 import img from "../images/every-two.jpg";
 
 const useStyles = makeStyles({
-	card: {
-		width: 275,
-	},
+	card: {},
 	media: {
 		backgroundSize: "65%",
 		backgroundColor: "#fafafa",
-		height: 150,
+		height: 120,
 	},
 	button: {
 		textTransform: "capitalize",
@@ -38,26 +36,28 @@ function Home() {
 				</Box>
 				<Divider />
 				<Box pt={2}>
-					<Grid container xs={12} pt={3} style={styles.container}>
-						<Card className={classes.card}>
-							<CardMedia className={classes.media} image={img} title="hello" />
+					<Grid container pt={3} style={styles.container} spacing={3}>
+						<Grid item xs={12} sm={3}>
+							<Card className={classes.card}>
+								<CardMedia className={classes.media} image={img} title="hello" />
 
-							<CardContent style={{ marginTop: 0, paddingTop: 2.5, textAlign: "center" }}>
-								<Box mb={1}>
-									<Chip label="React Native" size={"small"} className={classes.chip} />
+								<CardContent style={{ marginTop: 0, paddingTop: 2.5, textAlign: "center" }}>
+									<Box mb={1}>
+										<Chip label="React Native" size={"small"} className={classes.chip} />
 
-									<Chip label="Sqlite" size={"small"} className={classes.chip} />
-								</Box>
-								<Box>
-									<Typography>Every Two: Paycheck Budget Planner</Typography>
-								</Box>
-								<Box mt={1} justif="center" style={{ textAlign: "center" }}>
-									<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
-										App Store
-									</Button>
-								</Box>
-							</CardContent>
-						</Card>
+										<Chip label="Sqlite" size={"small"} className={classes.chip} />
+									</Box>
+									<Box>
+										<Typography>Every Two: Paycheck Budget Planner</Typography>
+									</Box>
+									<Box mt={1} justif="center" style={{ textAlign: "center" }}>
+										<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
+											App Store
+										</Button>
+									</Box>
+								</CardContent>
+							</Card>
+						</Grid>
 					</Grid>
 				</Box>
 			</Container>
