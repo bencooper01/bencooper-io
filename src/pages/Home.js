@@ -55,7 +55,7 @@ function Home() {
 				<Divider />
 				<Box pt={2}>
 					<Grid container className={styles.container} spacing={1}>
-						<Grid item xs={10} sm={3} md={3}>
+						<Grid item xs={10} sm={3}>
 							<Card className={styles.card}>
 								<CardMedia className={styles.media} image={img} title="hello" />
 

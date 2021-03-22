@@ -1,6 +1,8 @@
 import React from "react";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { blue } from "@material-ui/core/colors";
+import "typeface-open-sans";
+import "typeface-source-sans-pro";
 
 export const theme = createMuiTheme({
 	palette: {
@@ -11,5 +13,8 @@ export const theme = createMuiTheme({
 		secondary: {
 			main: "#004e98",
 		},
+	},
+	typography: {
+		fontFamily: ["Open Sans"].join(","),
 	},
 });
