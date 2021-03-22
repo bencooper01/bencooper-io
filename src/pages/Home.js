@@ -41,7 +41,7 @@ function Home() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
-				<Box pt={10} mb={3}>
+				<Box pt={8} mb={3}>
 					<Typography variant="h4" color="secondary">
 						<Link color="secondary" href="https://twitter.com/bencooper_01">
 							Ben Cooper
