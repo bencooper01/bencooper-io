@@ -8,7 +8,7 @@ import img from "../images/every-two.jpg";
 
 const useStyles = makeStyles({
 	card: {
-		minWidth: 275,
+		width: 275,
 	},
 	media: {
 		backgroundSize: "65%",
@@ -17,8 +17,12 @@ const useStyles = makeStyles({
 	},
 	button: {
 		textTransform: "capitalize",
+		alignContent: "center",
+		justifyContent: "center",
+		textAlign: "center",
 	},
 	chip: {
+		marginTop: 2,
 		marginRight: 4,
 	},
 });
@@ -38,16 +42,18 @@ function Home() {
 						<Card className={classes.card}>
 							<CardMedia className={classes.media} image={img} title="hello" />
 
-							<CardContent>
-								<Box mb={2}>
+							<CardContent style={{ marginTop: 0, paddingTop: 2.5, textAlign: "center" }}>
+								<Box mb={1}>
 									<Chip label="React Native" size={"small"} className={classes.chip} />
+
 									<Chip label="Sqlite" size={"small"} className={classes.chip} />
 								</Box>
-								<Typography>Every Two: Paycheck Budget Planner</Typography>
-
-								<Box mt={1}>
+								<Box>
+									<Typography>Every Two: Paycheck Budget Planner</Typography>
+								</Box>
+								<Box mt={1} justif="center" style={{ textAlign: "center" }}>
 									<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
-										App
+										App Store
 									</Button>
 								</Box>
 							</CardContent>
