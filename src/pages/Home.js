@@ -1,4 +1,4 @@
-import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid } from "@material-ui/core";
+import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
@@ -42,11 +42,12 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<Box pt={10} mb={3}>
-					<a href="https://twitter.com/bencooper_01">
-						<Typography variant="h4" style={{ color: "#004e98", textDecoration: "underline" }}>
+					<Typography variant="h4" color="secondary">
+						<Link color="secondary" href="https://twitter.com/bencooper_01">
 							Ben Cooper
-						</Typography>
-					</a>
+						</Link>
+					</Typography>
+
 					<Typography variant="h6">Hey, I'm Ben. I'm a 17 year old developer just trying to build some cool shit.💻</Typography>
 				</Box>
 
