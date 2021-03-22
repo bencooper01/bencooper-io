@@ -1,13 +1,17 @@
 import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
 import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
 import img from "../images/every-two.jpg";
 
 const useStyles = makeStyles({
-	card: {},
+	container: {
+		[theme.breakpoints.down("xs")]: {
+			justifyContent: "center",
+		},
+	},
 	media: {
 		backgroundSize: "65%",
 		backgroundColor: "#fafafa",
@@ -23,10 +27,15 @@ const useStyles = makeStyles({
 		marginTop: 2,
 		marginRight: 4,
 	},
+	cardContent: {
+		marginTop: 0,
+		paddingTop: 2.5,
+		textAlign: "center",
+	},
 });
 
 function Home() {
-	const classes = useStyles();
+	const styles = useStyles();
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
@@ -40,22 +49,20 @@ function Home() {
 				<Typography variant="h4">Projects</Typography>
 				<Divider />
 				<Box pt={2}>
-					<Grid container pt={3} style={styles.container} spacing={2}>
+					<Grid container pt={3} className={styles.container} spacing={2}>
 						<Grid item xs={10} sm={4}>
-							<Card className={classes.card}>
-								<CardMedia className={classes.media} image={img} title="hello" />
+							<Card className={styles.card}>
+								<CardMedia className={styles.media} image={img} title="hello" />
 
-								<CardContent style={{ marginTop: 0, paddingTop: 2.5, textAlign: "center" }}>
+								<CardContent className={styles.cardContent}>
 									<Box mb={1}>
-										<Chip label="React Native" size={"small"} className={classes.chip} />
-
-										<Chip label="Sqlite" size={"small"} className={classes.chip} />
+										<Chip label="React Native" size={"small"} className={styles.chip} />
 									</Box>
 									<Box>
 										<Typography>Every Two: Paycheck Budget Planner</Typography>
 									</Box>
-									<Box mt={1} justif="center" style={{ textAlign: "center" }}>
-										<Button size="large" variant="contained" className={classes.button} color="primary" href="https:\\apple.com">
+									<Box mt={1} justif="center">
+										<Button size="large" variant="contained" className={styles.button} color="primary" href="https:\\apple.com">
 											App Store
 										</Button>
 									</Box>
