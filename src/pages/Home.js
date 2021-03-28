@@ -1,4 +1,6 @@
-import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link } from "@material-ui/core";
+import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link, IconButton } from "@material-ui/core";
+import { AccessAlarm, Twitter } from "@material-ui/icons";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
@@ -34,8 +36,20 @@ const useStyles = makeStyles({
 		paddingTop: 2.5,
 		textAlign: "center",
 	},
+	card: {
+		minWidth: 100,
+	},
 
 	text: { fontSize: 21 },
+	twitter: {
+		color: "#00ACEE",
+	},
+	twitterLink: {
+		paddingTop: 5,
+	},
+	link: {
+		color: "black",
+	},
 });
 
 function Home() {
@@ -45,10 +59,11 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<Box pt={8} mb={3}>
-					<Typography variant="h4" color="secondary">
-						<Link color="secondary" href="https://twitter.com/bencooper_01">
-							Ben Cooper
-						</Link>
+					<Typography variant="h4" style={{ color: "#14487f" }}>
+						Ben Cooper
+						<IconButton href="https://twitter.com/bencooper_01" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
+							<Twitter className={styles.twitter} />
+						</IconButton>
 					</Typography>
 
 					<Typography variant="subtitle1" className={styles.text}>
@@ -56,9 +71,12 @@ function Home() {
 					</Typography>
 				</Box>
 
-				<Typography variant="h4">Projects</Typography>
-				<Divider />
-				<Box pt={2}>
+				<Typography variant="h4">
+					Projects
+					<Divider />
+				</Typography>
+
+				<Box pt={1} pb={1}>
 					<Grid container className={styles.container} spacing={1}>
 						<Grid item xs={9} sm={3}>
 							<Box>
