@@ -11,11 +11,7 @@ import { useEffect } from "react";
 // import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
 
 const useStyles = makeStyles({
-	container: {
-		[theme.breakpoints.down("xs")]: {
-			justifyContent: "center",
-		},
-	},
+	container: {},
 	media: {
 		backgroundSize: "65%",
 		backgroundColor: "#fafafa",
