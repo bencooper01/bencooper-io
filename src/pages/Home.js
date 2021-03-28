@@ -1,11 +1,12 @@
 import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link, IconButton } from "@material-ui/core";
-import { AccessAlarm, Twitter } from "@material-ui/icons";
+import { AccessAlarm, Twitter, GitHub } from "@material-ui/icons";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
 import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
+import GithubCorner from "react-github-corner";
 import img from "../images/every-two.jpg";
 import { useEffect } from "react";
 // import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
@@ -58,6 +59,7 @@ function Home() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
+				<GithubCorner href="https://github.com/bencooper01" />
 				<Box pt={8} mb={3}>
 					<Typography variant="h4" style={{ color: "#14487f" }}>
 						Ben Cooper
