@@ -79,7 +79,7 @@ function Home() {
 					</Typography>
 
 					<Typography variant="body2" className={styles.text}>
-						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bdcooper14@gmail.com
+						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bdcooper14@gmail.com.
 						<br />
 						{/* Email me anytime at ben@bencooper.net! */}
 					</Typography>
