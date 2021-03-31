@@ -80,7 +80,7 @@ function Home() {
 					</Typography>
 					<Box>
 						<img src={benImg} className={styles.benImg} />
-						<Typography variant="body2" className={styles.text} style={{ fontSize: 21 }}>
+						<Typography variant="body2" className={styles.text} style={{ fontSize: 20 }}>
 							I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at <Link style={{ color: "#14487f" }}>bdcooper14@gmail.com</Link>.
 							<br />
 							{/* Email me anytime at ben@bencooper.net! */}
