@@ -1,4 +1,4 @@
-import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link, IconButton } from "@material-ui/core";
+import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link, IconButton, Avatar } from "@material-ui/core";
 import { AccessAlarm, Twitter, GitHub } from "@material-ui/icons";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
@@ -8,6 +8,7 @@ import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
 import GithubCorner from "react-github-corner";
 import img from "../images/every-two.jpg";
+import benImg from "../images/bencooper.jpg";
 import { useEffect } from "react";
 // import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
 
@@ -51,6 +52,10 @@ const useStyles = makeStyles({
 	link: {
 		color: "black",
 	},
+	benImg: {
+		maxHeight: 140,
+		marginRight: 15,
+	},
 });
 
 function Home() {
@@ -60,20 +65,25 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={8} mb={3}>
-					<Typography variant="h4" style={{ color: "#14487f" }}>
-						Ben Cooper
-						<IconButton href="https://twitter.com/bencooper_01" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
-							<Twitter className={styles.twitter} />
-						</IconButton>
-					</Typography>
+				<Box pt={8} style={{ display: "flex", flexDirection: "row" }}>
+					<img src={benImg} className={styles.benImg} />
+					<Box pt={0} mb={3}>
+						<Typography variant="h4" style={{ color: "#14487f" }} display="inline">
+							Ben Cooper
+							<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
+								<Twitter className={styles.twitter} />
+							</IconButton>
+						</Typography>
 
-					<Typography variant="subtitle1" className={styles.text}>
-						I'm a 17 year old developer. 💻
-					</Typography>
+						<Typography variant="subtitle1" className={styles.text}>
+							I'm a 17 year old developer, currently working on Every Two (iOS and Android).
+							<br />
+							{/* Email me anytime at ben@bencooper.net! */}
+						</Typography>
+					</Box>
 				</Box>
 
-				<Typography variant="h4">
+				<Typography variant="h4" style={{ textAlign: "center" }}>
 					Projects
 					<Divider />
 				</Typography>
