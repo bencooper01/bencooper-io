@@ -69,24 +69,22 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={4} pb={5} display="flex" justifyContent="center" flexDirection="column">
-					<img src={benImg} className={styles.benImg} />
-
-					<Typography variant="h4" style={{ color: "#14487f", textAlign: "center" }}>
+				<Box pt={8} pb={5}>
+					<Typography variant="h4" style={{ color: "#14487f" }}>
 						Ben Cooper
 						<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
 							<Twitter className={styles.twitter} />
 						</IconButton>
 					</Typography>
 
-					<Typography variant="body2" className={styles.text} style={{ textAlign: "center" }}>
-						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bencooper14@gmail.com
+					<Typography variant="body2" className={styles.text}>
+						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bdcooper14@gmail.com
 						<br />
 						{/* Email me anytime at ben@bencooper.net! */}
 					</Typography>
 				</Box>
 
-				<Typography variant="h4" style={{ textAlign: "center" }}>
+				<Typography variant="h4">
 					Projects
 					<Divider />
 				</Typography>
