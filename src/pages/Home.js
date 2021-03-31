@@ -53,8 +53,10 @@ const useStyles = makeStyles({
 		color: "black",
 	},
 	benImg: {
-		maxHeight: 170,
-		marginRight: 15,
+		height: 125,
+		width: 120,
+		marginBottom: 5,
+		borderRadius: 3,
 	},
 });
 
@@ -65,14 +67,16 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={5} pb={15}>
-					<img src={benImg} className={styles.benImg} style={{ float: "left" }} />
-					<Typography variant="h4" style={{ color: "#14487f" }}>
-						Ben Cooper
-						<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
-							<Twitter className={styles.twitter} />
-						</IconButton>
-					</Typography>
+				<Box pt={8} pb={5}>
+					<img src={benImg} className={styles.benImg} />
+					<Box>
+						<Typography variant="h4" style={{ color: "#14487f" }}>
+							Ben Cooper
+							<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
+								<Twitter className={styles.twitter} />
+							</IconButton>
+						</Typography>
+					</Box>
 
 					<Typography variant="subtitle1" className={styles.text}>
 						I'm a 17 year old developer, currently working on Every Two (iOS and Android).
