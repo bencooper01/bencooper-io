@@ -65,8 +65,7 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={8} style={{ display: "flex", flexDirection: "row" }}>
-					<img src={benImg} className={styles.benImg} />
+				<Box pt={8}>
 					<Box pt={0} mb={3}>
 						<Typography variant="h4" style={{ color: "#14487f" }} display="inline">
 							Ben Cooper
@@ -83,7 +82,7 @@ function Home() {
 					</Box>
 				</Box>
 
-				<Typography variant="h4" style={{ textAlign: "center" }}>
+				<Typography variant="h4">
 					Projects
 					<Divider />
 				</Typography>
