@@ -8,7 +8,7 @@ import styles from "../styles/styles.module.css";
 import { theme } from "../styles/theme";
 import GithubCorner from "react-github-corner";
 import img from "../images/every-two.jpg";
-import benImg from "../images/bencooper.jpg";
+import benImg from "../images/bencooper4.jpg";
 import { useEffect } from "react";
 // import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
 
@@ -53,7 +53,7 @@ const useStyles = makeStyles({
 		color: "black",
 	},
 	benImg: {
-		maxHeight: 140,
+		maxHeight: 170,
 		marginRight: 15,
 	},
 });
