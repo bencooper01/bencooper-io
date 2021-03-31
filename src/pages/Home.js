@@ -72,7 +72,7 @@ function Home() {
 				<GithubCorner href="https://github.com/bencooper01" />
 
 				<Box pt={8} pb={4} display="flex" justifyContent="center" flexDirection="column">
-					<Typography variant="h4" style={{ color: "#14487f" }}>
+					<Typography variant="h4" style={{ color: "#14487f", marginBottom: 3 }}>
 						Ben Cooper
 						<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
 							<Twitter className={styles.twitter} />
@@ -80,7 +80,7 @@ function Home() {
 					</Typography>
 					<Box>
 						<img src={benImg} className={styles.benImg} />
-						<Typography variant="body2" className={styles.text} style={{ fontSize: 20 }}>
+						<Typography variant="body2" className={styles.text} style={{ fontSize: 21 }}>
 							I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at <Link style={{ color: "#14487f" }}>bdcooper14@gmail.com</Link>.
 							<br />
 							{/* Email me anytime at ben@bencooper.net! */}
