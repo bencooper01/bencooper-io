@@ -57,6 +57,8 @@ const useStyles = makeStyles({
 		width: 120,
 		marginBottom: 5,
 		borderRadius: 3,
+		marginRight: 10,
+		alignSelf: "center",
 	},
 });
 
@@ -67,25 +69,24 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={8} pb={5}>
+				<Box pt={4} pb={5} display="flex" justifyContent="center" flexDirection="column">
 					<img src={benImg} className={styles.benImg} />
-					<Box>
-						<Typography variant="h4" style={{ color: "#14487f" }}>
-							Ben Cooper
-							<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
-								<Twitter className={styles.twitter} />
-							</IconButton>
-						</Typography>
-					</Box>
 
-					<Typography variant="subtitle1" className={styles.text}>
+					<Typography variant="h4" style={{ color: "#14487f", textAlign: "center" }}>
+						Ben Cooper
+						<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
+							<Twitter className={styles.twitter} />
+						</IconButton>
+					</Typography>
+
+					<Typography variant="body2" className={styles.text} style={{ textAlign: "center" }}>
 						I'm a 17 year old developer, currently working on Every Two (iOS and Android).
 						<br />
 						{/* Email me anytime at ben@bencooper.net! */}
 					</Typography>
 				</Box>
 
-				<Typography variant="h4">
+				<Typography variant="h4" style={{ textAlign: "center" }}>
 					Projects
 					<Divider />
 				</Typography>
