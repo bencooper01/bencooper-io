@@ -69,7 +69,7 @@ function Home() {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="md">
 				<GithubCorner href="https://github.com/bencooper01" />
-				<Box pt={8} pb={5}>
+				<Box pt={8} pb={4} display="flex" justifyContent="center" flexDirection="column">
 					<Typography variant="h4" style={{ color: "#14487f" }}>
 						Ben Cooper
 						<IconButton href="https://twitter.com/bend_cooper" disableRipple={true} edge={false} style={{ outline: "none", marginLeft: 3 }} size="small">
