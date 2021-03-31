@@ -78,7 +78,7 @@ function Home() {
 						</IconButton>
 					</Typography>
 
-					<Typography variant="body2" className={styles.text}>
+					<Typography variant="body2" className={styles.text} style={{ fontSize: 20 }}>
 						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bdcooper14@gmail.com.
 						<br />
 						{/* Email me anytime at ben@bencooper.net! */}
