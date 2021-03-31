@@ -55,10 +55,11 @@ const useStyles = makeStyles({
 	benImg: {
 		height: 125,
 		width: 120,
-		marginBottom: 5,
+		marginBottom: 1,
 		borderRadius: 3,
 		marginRight: 10,
-		alignSelf: "center",
+		marginTop: 6,
+		float: "left",
 	},
 });
 
@@ -77,12 +78,14 @@ function Home() {
 							<Twitter className={styles.twitter} />
 						</IconButton>
 					</Typography>
-
-					<Typography variant="body2" className={styles.text} style={{ fontSize: 20 }}>
-						I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at bdcooper14@gmail.com.
-						<br />
-						{/* Email me anytime at ben@bencooper.net! */}
-					</Typography>
+					<Box>
+						<img src={benImg} className={styles.benImg} />
+						<Typography variant="body2" className={styles.text} style={{ fontSize: 20 }}>
+							I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at <Link style={{ color: "#14487f" }}>bdcooper14@gmail.com</Link>.
+							<br />
+							{/* Email me anytime at ben@bencooper.net! */}
+						</Typography>
+					</Box>
 				</Box>
 
 				<Typography variant="h4">
