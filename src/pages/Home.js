@@ -39,7 +39,8 @@ const useStyles = makeStyles({
 		textAlign: "center",
 	},
 	card: {
-		minWidth: 200,
+		width: 225,
+		height: 265,
 	},
 
 	text: { fontSize: 21 },
