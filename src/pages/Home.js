@@ -105,14 +105,14 @@ function Home() {
 									<CardMedia className={styles.media} image={img} title="hello" />
 
 									<CardContent className={styles.cardContent}>
-										<Box mb={1}>
+										<Box mb={0}>
 											<Chip label="React Native" size={"small"} className={styles.chip} />
 										</Box>
 										<Box>
 											<Typography>Every Two: Paycheck Budget Planner</Typography>
 										</Box>
 										<Box mt={1}>
-											<Button size="large" variant="contained" className={styles.button} color="primary" href="https:\\apple.com" disableRipple={true}>
+											<Button size="large" variant="contained" disabled={true} className={styles.button} color="primary" href="https:\\apple.com" disableRipple={true}>
 												App Store
 											</Button>
 										</Box>
