@@ -53,8 +53,8 @@ const useStyles = makeStyles({
 		color: "black",
 	},
 	benImg: {
-		height: 125,
-		width: 120,
+		height: 155,
+		width: 150,
 		marginBottom: 1,
 		borderRadius: 3,
 		marginRight: 10,
@@ -113,7 +113,7 @@ function Home() {
 										</Box>
 										<Box mt={1}>
 											<Button size="large" variant="contained" disabled={true} className={styles.button} color="primary" href="https:\\apple.com" disableRipple={true}>
-												App Store
+												App Store (soon)
 											</Button>
 										</Box>
 									</CardContent>
