@@ -14,23 +14,16 @@ import React from "react";
 export const NewsletterForm = (props) => {
 	const [email, setEmail] = React.useState("");
 
-	const submit = () => {
-		const requestOptions = {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({ title: "React POST Request Example" }),
-		};
-		fetch("https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&amp;id=ff0b812431", requestOptions)
-			.then((response) => response.json())
-			.then((data) => this.setState({ postId: data.id }));
-	};
 	return (
 		<Box style={{ justifyContent: "center", alignSelf: "center", alignContent: "center", alignItems: "center", width: "100%" }}>
+			<Typography variant="h6" style={{ textAlign: "left" }}>
+				Hear what I'm working on.
+			</Typography>
 			<form action="https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&id=ff0b812431" method="POST" noValidate>
 				<TextField
 					label="Email address"
 					required
-					style={{ width: "80%" }}
+					style={{ width: "50%" }}
 					placeholder="ben@bencooper.net"
 					color="secondary"
 					type="email"

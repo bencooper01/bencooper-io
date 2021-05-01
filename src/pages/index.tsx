@@ -52,7 +52,7 @@ const Home = (props) => {
 				<Box pt={1} pb={1} className={classes.container}>
 					<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
 				</Box>
-				<Box style={{ alignItems: "center", justifyContent: "center", alignSelf: "center" }} align="center">
+				<Box style={{ alignItems: "center", justifyContent: "center", alignSelf: "center", width: "50%", outline: 2, outlineColor: "black" }} align="center">
 					<NewsletterForm />
 				</Box>
 			</Container>
