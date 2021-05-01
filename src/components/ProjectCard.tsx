@@ -14,9 +14,9 @@ import Image from "next/image";
 import useStyles from "../styles/styles";
 
 interface Props {
-	title: string;
-	link: string;
-	caption: string;
+	title?: string;
+	link?: string;
+	caption?: string;
 }
 
 export const ProjectCard: React.FC<Props> = (props) => {
