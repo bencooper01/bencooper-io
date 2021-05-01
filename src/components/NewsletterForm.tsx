@@ -21,7 +21,7 @@ export const NewsletterForm = (props) => {
 			</Typography>
 
 			<form action="https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&id=ff0b812431" method="POST" noValidate>
-				<Box style={{ alignContent: "center", justifyContent: "center" }} align="center">
+				<Box style={{ alignContent: "center", justifyContent: "center" }}>
 					<TextField
 						label="Email address"
 						required
