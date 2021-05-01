@@ -21,19 +21,20 @@ interface Props {
 
 export const ProjectCard: React.FC<Props> = (props) => {
 	const classes = useStyles();
+	const { title, link, caption } = props;
 
 	return (
 		<Grid item xs={9} sm={3}>
 			<Box>
 				<Card className={classes.card}>
-					<CardMedia className={classes.media} image="/every-two.jpg" title="hello" />
+					<CardMedia className={classes.media} image="/every-two.jpg" />
 
 					<CardContent className={classes.cardContent}>
 						<Box mb={0}>
 							<Chip label="React Native" size={"small"} className={classes.chip} />
 						</Box>
 						<Box>
-							<Typography>Every Two: Paycheck Budget Planner</Typography>
+							<Typography>{props.title}</Typography>
 						</Box>
 						<Box mt={1}>
 							<Button size="large" variant="contained" disabled={true} className={classes.button} color="primary" href="https:\\apple.com" disableRipple={true}>

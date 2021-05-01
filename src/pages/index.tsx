@@ -50,7 +50,7 @@ const Home = (props) => {
 				</Typography>
 
 				<Box pt={1} pb={1}>
-					<ProjectCard />
+					<ProjectCard title={"Every Two: Paycheck Budget Planner"} caption={"First app, made in 2021!"} />
 				</Box>
 				<Box>
 					<NewsletterForm />
