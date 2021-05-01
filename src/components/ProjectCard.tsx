@@ -21,20 +21,22 @@ export const ProjectCard: React.FC<Props> = (props) => {
 	const { title, link, caption } = props;
 
 	return (
-		<Box>
-			<Card className={classes.card}>
-				<CardMedia className={classes.media} image="/every-two.jpg" />
+		<Grid item xs="auto" sm={3}>
+			<Box>
+				<Card className={classes.card}>
+					<CardMedia className={classes.media} image="/every-two.jpg" />
 
-				<CardContent className={classes.cardContent}>
-					<Typography variant="h6">{props.title}</Typography>
-					<Typography>{props.caption}</Typography>
-				</CardContent>
-				<CardActions style={{ alignContent: "center", justifyContent: "center", marginBottom: 0, paddingTop: 5, marginTop: 0 }}>
-					<Button size="large" variant="contained" disabled={true} className={classes.button} color="primary" href="https:\\apple.com" disableRipple={true}>
-						App Store (soon)
-					</Button>
-				</CardActions>
-			</Card>
-		</Box>
+					<CardContent className={classes.cardContent}>
+						<Typography variant="h6">{props.title}</Typography>
+						<Typography>{props.caption}</Typography>
+					</CardContent>
+					<CardActions style={{ alignContent: "center", justifyContent: "center", marginBottom: 0, paddingTop: 5, marginTop: 0 }}>
+						<Button size="large" variant="contained" disabled={true} className={classes.button} color="primary" href="https:\\apple.com" disableRipple={true}>
+							App Store (soon)
+						</Button>
+					</CardActions>
+				</Card>
+			</Box>
+		</Grid>
 	);
 };

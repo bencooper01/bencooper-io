@@ -6,7 +6,6 @@ export const useStyles = makeStyles(
 		container: {
 			[theme.breakpoints.down("xs")]: {
 				justifyContent: "center",
-				alignItems: "center",
 			},
 		},
 

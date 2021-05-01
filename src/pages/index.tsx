@@ -54,9 +54,6 @@ const Home = (props) => {
 						<Grid item xs="auto" sm={3} justify="center">
 							<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
 						</Grid>
-						<Grid item xs="auto" sm={3}>
-							<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
-						</Grid>
 					</Grid>
 				</Box>
 
