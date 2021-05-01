@@ -5,9 +5,6 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
 import { theme } from "../styles/theme";
-import GithubCorner from "react-github-corner";
-import { useEffect } from "react";
-import Image from "next/image";
 import useStyles from "../styles/styles";
 import React from "react";
 
