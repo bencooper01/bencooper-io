@@ -49,8 +49,10 @@ const Home = (props) => {
 					<Divider />
 				</Typography>
 
-				<Box pt={1} pb={20} className={classes.container}>
-					<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
+				<Box pt={1} pb={20}>
+					<Grid container className={classes.container} spacing={1}>
+						<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
+					</Grid>
 				</Box>
 
 				<Box pb={5} justifyContent="center" alignContent="center" alignItems="center" alignSelf="center">

@@ -8,6 +8,7 @@ export const useStyles = makeStyles(
 				justifyContent: "center",
 			},
 		},
+
 		media: {
 			backgroundSize: "65%",
 			backgroundColor: "#fafafa",
