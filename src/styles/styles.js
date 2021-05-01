@@ -27,10 +27,10 @@ export const useStyles = makeStyles({
 	},
 	cardContent: {
 		marginTop: 0,
-		paddingTop: 2.5,
+		paddingTop: 0,
 		marginBottom: 0,
 		textAlign: "center",
-		paddingBottom: 2.5,
+		paddingBottom: 0,
 	},
 	card: {
 		width: 225,

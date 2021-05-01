@@ -24,7 +24,7 @@ export const ProjectCard: React.FC<Props> = (props) => {
 		<Grid item xs={9} sm={3}>
 			<Box>
 				<Card className={classes.card}>
-					<CardMedia className={classes.media} style={{ textAlign: "center" }}>
+					<CardMedia className={classes.media} style={{ alignSelf: "center", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
 						<Image src="/every-two.jpg" height={115} width={120} quality={"100"} className={classes.media} layout="fixed" />
 					</CardMedia>
 
