@@ -1,7 +1,7 @@
 import { Container, Typography, Divider, Box, Card, CardContent, CardActions, Button, CardMedia, Chip, Grid, Link, IconButton, Avatar } from "@material-ui/core";
 import { AccessAlarm, Twitter, GitHub } from "@material-ui/icons";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createMuiTheme, StylesProvider, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
 import { theme } from "../styles/theme";
@@ -49,8 +49,8 @@ const Home = (props) => {
 					<Divider />
 				</Typography>
 
-				<Box pt={1} pb={1}>
-					<ProjectCard title={"Every Two: Paycheck Budget Planner"} caption={"First app, made in 2021!"} />
+				<Box pt={1} pb={1} className={classes.container}>
+					<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
 				</Box>
 				<Box>
 					<NewsletterForm />

@@ -30,18 +30,15 @@ export const ProjectCard: React.FC<Props> = (props) => {
 					<CardMedia className={classes.media} image="/every-two.jpg" />
 
 					<CardContent className={classes.cardContent}>
-						<Box mb={0}>
-							<Chip label="React Native" size={"small"} className={classes.chip} />
-						</Box>
-						<Box>
-							<Typography>{props.title}</Typography>
-						</Box>
-						<Box mt={1}>
-							<Button size="large" variant="contained" disabled={true} className={classes.button} color="primary" href="https:\\apple.com" disableRipple={true}>
-								App Store (soon)
-							</Button>
-						</Box>
+						<Typography variant="h6">{props.title}</Typography>
+						<Divider />
+						<Typography>{props.caption}</Typography>
 					</CardContent>
+					<CardActions style={{ alignContent: "center", justifyContent: "center", marginBottom: 0, paddingTop: 5, marginTop: 0 }}>
+						<Button size="large" variant="contained" disabled={true} className={classes.button} color="primary" href="https:\\apple.com" disableRipple={true}>
+							App Store (soon)
+						</Button>
+					</CardActions>
 				</Card>
 			</Box>
 		</Grid>
