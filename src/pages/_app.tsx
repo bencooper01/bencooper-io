@@ -1,7 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import { Container, Typography, ThemeProvider, CssBaseline } from "@material-ui/core";
-import { theme } from "../styles/theme";
+import PropTypes from "prop-types";
+import { Container, Typography, ThemeProvider } from "@material-ui/core";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import theme from "../styles/theme";
 import "../styles/globals.css";
 
 export default function MyApp(props) {
@@ -31,3 +33,8 @@ export default function MyApp(props) {
 		</React.Fragment>
 	);
 }
+
+MyApp.propTypes = {
+	Component: PropTypes.elementType.isRequired,
+	pageProps: PropTypes.object.isRequired,
+};

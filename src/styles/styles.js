@@ -11,6 +11,7 @@ export const useStyles = makeStyles({
 		backgroundSize: "65%",
 		backgroundColor: "#fafafa",
 		height: 115,
+		width: "auto",
 	},
 	button: {
 		textTransform: "capitalize",
