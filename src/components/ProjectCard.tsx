@@ -8,9 +8,6 @@ import { theme } from "../styles/theme";
 import GithubCorner from "react-github-corner";
 // import img from "../../public/every-two.jpg";
 import { useEffect } from "react";
-import { NewsletterForm } from "./NewsletterForm";
-// import { Card as BootstrapCard, Container as BootstrapContainer, Button as BootstrapButton, Badge } from "react-bootstrap";
-import Image from "next/image";
 import useStyles from "../styles/styles";
 
 interface Props {
@@ -31,7 +28,6 @@ export const ProjectCard: React.FC<Props> = (props) => {
 
 					<CardContent className={classes.cardContent}>
 						<Typography variant="h6">{props.title}</Typography>
-						<Divider />
 						<Typography>{props.caption}</Typography>
 					</CardContent>
 					<CardActions style={{ alignContent: "center", justifyContent: "center", marginBottom: 0, paddingTop: 5, marginTop: 0 }}>
