@@ -49,10 +49,11 @@ const Home = (props) => {
 					<Divider />
 				</Typography>
 
-				<Box pt={1} pb={1} className={classes.container}>
+				<Box pt={1} pb={20} className={classes.container}>
 					<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
 				</Box>
-				<Box style={{ alignItems: "center", justifyContent: "center", alignSelf: "center", width: "50%" }} border={2} alignItems="center" alignSelf="center" justifySelf="center">
+
+				<Box pb={5} justifyContent="center" alignContent="center" alignItems="center" alignSelf="center">
 					<NewsletterForm />
 				</Box>
 			</Container>
