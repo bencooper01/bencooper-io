@@ -13,49 +13,39 @@ export const NewsletterForm = (props) => {
 	const [email, setEmail] = React.useState("");
 
 	return (
-		<Box style={{ justifyContent: "center", alignSelf: "center", alignContent: "center", alignItems: "center" }}>
-			<Grid container justify="center" spacing={0}>
-				<Grid item xs={8} sm={7}>
-					<Card style={{ padding: 15, textAlign: "center", justifyContent: "center", alignSelf: "center" }}>
-						<Typography variant="h6" style={{ textAlign: "center" }}>
-							Monthly updates on what I'm working on.
-						</Typography>
-						<form action="https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&id=ff0b812431" method="POST" noValidate>
-							<Box style={{ textAlign: "center" }}>
-								<TextField
-									label="Email address"
-									required
-									style={{ width: "50%", minWidth: 200, alignSelf: "center", justifyContent: "center", textAlign: "center" }}
-									placeholder="ben@bencooper.net"
-									color="secondary"
-									type="email"
-									name="EMAIL"
-									id="MERGE0"
-									tabIndex={-1}
-									value={email}
-									onChange={(event) => setEmail(event.target.value)}
-								/>
+		<Grid container justify="center" spacing={0}>
+			<Grid item xs={12} sm={7}>
+				<Card style={{ padding: 15, textAlign: "center" }}>
+					<Typography variant="h6" style={{ textAlign: "center" }}>
+						Monthly updates on what I'm working on.
+					</Typography>
+					<form action="https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&id=ff0b812431" method="POST" noValidate>
+						<Box style={{ textAlign: "center" }}>
+							<TextField
+								label="Email address"
+								required
+								style={{ width: "50%", minWidth: 200, alignSelf: "center", justifyContent: "center", textAlign: "center" }}
+								placeholder="ben@bencooper.net"
+								color="secondary"
+								type="email"
+								name="EMAIL"
+								id="MERGE0"
+								tabIndex={-1}
+								value={email}
+								onChange={(event) => setEmail(event.target.value)}
+							/>
 
-								<div style={{ position: "absolute", left: -5000 }} aria-hidden="true">
-									<input type="text" name="b_7eb246d13da7a0da8b627c327_ff0b812431" tabIndex={-1} value=""></input>
-								</div>
+							<div style={{ position: "absolute", left: -5000 }} aria-hidden="true">
+								<input type="text" name="b_7eb246d13da7a0da8b627c327_ff0b812431" tabIndex={-1} value=""></input>
+							</div>
 
-								<Button
-									variant="contained"
-									style={{ verticalAlign: "bottom", marginLeft: 5, marginBottom: 1, marginTop: 10 }}
-									color="secondary"
-									size="large"
-									type="submit"
-									value="Subscribe"
-									name="subscribe"
-								>
-									Subscribe
-								</Button>
-							</Box>
-						</form>
-					</Card>
-				</Grid>
+							<Button variant="contained" style={{ verticalAlign: "bottom", marginLeft: 5, marginBottom: 1 }} color="secondary" size="large" type="submit" value="Subscribe" name="subscribe">
+								Subscribe
+							</Button>
+						</Box>
+					</form>
+				</Card>
 			</Grid>
-		</Box>
+		</Grid>
 	);
 };
