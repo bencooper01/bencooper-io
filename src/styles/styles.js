@@ -24,7 +24,7 @@ export const useStyles = makeStyles(
 			textAlign: "center",
 		},
 		newsletterButton: {
-			[theme.breakpoints.down("xs")]: {
+			[theme.breakpoints.down("sm")]: {
 				marginTop: 10,
 			},
 		},
