@@ -15,9 +15,9 @@ export const NewsletterForm = (props) => {
 
 	return (
 		<Grid container justify="center" spacing={0}>
-			<Grid item xs={10} sm={7}>
+			<Grid item xs={11} sm={7}>
 				<Card style={{ textAlign: "center", paddingRight: 2.5, paddingLeft: 2.5, paddingTop: 15, paddingBottom: 15 }}>
-					<Typography variant="h6" style={{ textAlign: "center" }}>
+					<Typography variant="h6" style={{ textAlign: "center", paddingLeft: 15, paddingRight: 15 }}>
 						Monthly updates on what I'm working on
 						<ArrowDownward style={{ verticalAlign: "middle" }} fontSize="small" />
 					</Typography>
