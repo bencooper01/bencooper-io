@@ -55,7 +55,7 @@ const Home = (props) => {
 					</Grid>
 				</Box>
 
-				<Box pb={5} justifyContent="center" alignContent="center" alignItems="center" alignSelf="center">
+				<Box pb={5}>
 					<NewsletterForm />
 				</Box>
 			</Container>
