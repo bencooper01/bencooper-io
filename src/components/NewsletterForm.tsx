@@ -14,11 +14,11 @@ export const NewsletterForm = (props) => {
 
 	return (
 		<Grid container justify="center" spacing={0}>
-			<Grid item xs={12} sm={7}>
+			<Grid item xs={10} sm={7}>
 				<Card style={{ textAlign: "center", paddingRight: 2.5, paddingLeft: 2.5, paddingTop: 15, paddingBottom: 15 }}>
 					<Typography variant="h6" style={{ textAlign: "center" }}>
 						Monthly updates on what I'm working on
-						<ArrowDownward style={{ verticalAlign: "middle" }} fontSize="small" color="secondary" />
+						<ArrowDownward style={{ verticalAlign: "middle" }} fontSize="small" />
 					</Typography>
 					<form action="https://gmail.us1.list-manage.com/subscribe/post?u=7eb246d13da7a0da8b627c327&id=ff0b812431" method="POST" noValidate>
 						<Box style={{ textAlign: "center", paddingTop: 1 }}>
