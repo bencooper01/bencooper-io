@@ -50,10 +50,8 @@ const Home = (props) => {
 				</Typography>
 
 				<Box pt={1} pb={20}>
-					<Grid container className={classes.container} spacing={1}>
-						<Grid item xs="auto" sm={3} justify="center">
-							<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
-						</Grid>
+					<Grid container className={classes.container} spacing={2}>
+						<ProjectCard title={"Every Two"} caption={"My first app, a budget planner, launching in 2021."} />
 					</Grid>
 				</Box>
 
