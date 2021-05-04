@@ -11,6 +11,7 @@ import { ArrowDownward } from "@material-ui/icons";
 
 export const NewsletterForm = (props) => {
 	const [email, setEmail] = React.useState("");
+	const classes = useStyles();
 
 	return (
 		<Grid container justify="center" spacing={0}>
@@ -25,7 +26,7 @@ export const NewsletterForm = (props) => {
 							<TextField
 								label="Email address"
 								required
-								style={{ width: "50%", minWidth: 200, alignSelf: "center", justifyContent: "center", textAlign: "center" }}
+								style={{ width: "50%", minWidth: 250, alignSelf: "center", justifyContent: "center", textAlign: "center" }}
 								placeholder="ben@bencooper.net"
 								color="secondary"
 								type="email"
@@ -40,7 +41,20 @@ export const NewsletterForm = (props) => {
 								<input type="text" name="b_7eb246d13da7a0da8b627c327_ff0b812431" tabIndex={-1} value=""></input>
 							</div>
 
-							<Button variant="contained" style={{ verticalAlign: "bottom", marginLeft: 5, marginBottom: 1 }} color="secondary" size="large" type="submit" value="Subscribe" name="subscribe">
+							<Button
+								variant="contained"
+								style={{
+									verticalAlign: "bottom",
+									marginLeft: 5,
+									marginBottom: 1,
+								}}
+								className={classes.newsletterButton}
+								color="secondary"
+								size="large"
+								type="submit"
+								value="Subscribe"
+								name="subscribe"
+							>
 								Subscribe
 							</Button>
 						</Box>

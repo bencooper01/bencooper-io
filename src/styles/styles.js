@@ -23,6 +23,11 @@ export const useStyles = makeStyles(
 			justifyContent: "center",
 			textAlign: "center",
 		},
+		newsletterButton: {
+			[theme.breakpoints.down("xs")]: {
+				marginTop: 10,
+			},
+		},
 		chip: {
 			marginTop: 2,
 			marginRight: 4,
