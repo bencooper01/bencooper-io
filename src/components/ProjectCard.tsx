@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<Props> = (props) => {
 				<Box w="100%" mb={15}>
 					<Box overflow="hidden">
 						<Link textDecoration="none" href={link} isExternal={true}>
-							<Image src={imgSrc} alt="some text" objectFit="contain" height={190} borderRadius="md" />
+							<Image src={imgSrc} alt={`Image of ${title}`} objectFit="contain" height={190} borderRadius="md" />
 						</Link>
 					</Box>
 

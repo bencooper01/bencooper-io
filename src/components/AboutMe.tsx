@@ -36,7 +36,7 @@ export const AboutMe = (props) => {
 			</Heading>
 			<Box>
 				<div className={classes.benImg}>
-					<Image src="/bencooper4.jpg" height={155} width={150} quality={"100"} className={classes.benImg} />
+					<Image src="/bencooper4.jpg" height={155} width={150} quality={"100"} className={classes.benImg} alt="Image of Ben" />
 				</div>
 				<Text variant="body2" className={classes.text} style={{ fontSize: 20 }}>
 					I'm a 17 year old developer, currently working on Every Two (iOS and Android). Email me anytime at{" "}
