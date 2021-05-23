@@ -19,7 +19,6 @@ export const NewsletterForm = (props) => {
 	return (
 		<Flex align={"center"} justify={"center"} bg={useColorModeValue("gray.50", "gray.800")}>
 			<Container
-				maxW={"lg"}
 				bg={useColorModeValue("white", "whiteAlpha.100")}
 				rounded={"lg"}
 				p={6}
